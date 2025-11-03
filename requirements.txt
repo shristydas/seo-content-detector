@@ -1,0 +1,24 @@
+# Core dependencies (Python 3.14 compatible)
+pandas
+numpy
+beautifulsoup4
+lxml
+
+# NLP and ML
+scikit-learn
+sentence-transformers
+textstat
+
+# Visualization
+matplotlib
+seaborn
+
+# Web scraping for real-time analysis
+requests
+
+# Jupyter
+jupyter
+ipykernel
+
+# Streamlit (bonus)
+streamlit
