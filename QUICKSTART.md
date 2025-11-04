@@ -129,4 +129,3 @@ Thin content pages: ~10-15%
 
 ---
 
-**Estimated total time**: 5 minutes + 2-3 min processing
