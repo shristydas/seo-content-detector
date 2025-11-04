@@ -4,43 +4,43 @@
 
 A complete machine learning pipeline for analyzing web content quality, featuring:
 
-### Core Components (100 points)
+### Core Components
 
-1. **Data Collection & HTML Parsing (15%)** ✅
+1. **Data Collection & HTML Parsing** 
    - Parses 81 URLs with HTML content from CSV
    - Extracts title, clean body text, word count
    - Robust error handling for malformed HTML
    - Output: `extracted_content.csv`
 
-2. **Text Preprocessing & Feature Engineering (25%)** ✅
+2. **Text Preprocessing & Feature Engineering** 
    - Word count, sentence count, readability (Flesch)
    - Top 5 keywords via TF-IDF
    - Semantic embeddings via Sentence Transformers
    - Thin content flagging (<500 words)
    - Output: `features.csv`
 
-3. **Duplicate Detection (20%)** ✅
+3. **Duplicate Detection** 
    - Cosine similarity on 384-dim embeddings
    - Threshold: 0.80 for duplicate pairs
    - Comprehensive similarity matrix
    - Output: `duplicates.csv`
 
-4. **Content Quality Scoring (25%)** ✅
+4. **Content Quality Scoring** 
    - Random Forest classifier (Low/Medium/High)
    - Synthetic labels with clear criteria
    - 78-85% accuracy vs 64% baseline
    - Feature importance analysis
    - Saved model: `models/quality_model.pkl`
 
-5. **Real-Time Analysis Demo (15%)** ✅
+5. **Real-Time Analysis Demo** 
    - `analyze_url()` function in notebook
    - Fetches, parses, scores any URL
    - Returns quality label + similar content
    - JSON output format
 
-### Bonus Features (+25 points)
+### Streamlit Deployment for UI
 
-1. **Streamlit Web App (+15)** ✅
+1. **Streamlit Web App** 
    - Interactive UI for URL analysis
    - Real-time content scoring
    - Quality metrics dashboard
@@ -48,20 +48,19 @@ A complete machine learning pipeline for analyzing web content quality, featurin
    - Proper directory structure
    - Ready for Streamlit Cloud deployment
 
-2. **Visualizations (+3)** ✅
+2. **Visualizations** 
    - Feature importance bar chart
    - Confusion matrix heatmap
    - Similarity heatmap
    - Quality distribution charts
    - Word count/readability by quality
 
-3. **Advanced NLP (+7)** ✅
+3. **Advanced NLP** 
    - Sentence Transformers embeddings
    - TF-IDF with bigrams
    - Semantic similarity detection
    - Enhanced keyword extraction
 
-**Total Score Potential: 125/125 points**
 
 ## Technology Stack
 
@@ -201,35 +200,6 @@ leadwalnut-shristy/
 7. A/B testing framework
 8. Content optimization suggestions
 
-## Evaluation Checklist
-
-- ✅ Repository structure follows requirements
-- ✅ Jupyter notebook runs end-to-end
-- ✅ All CSV outputs generated
-- ✅ Model accuracy documented
-- ✅ Real-time analysis function works
-- ✅ README includes all required sections
-- ✅ Code is clean with comments
-- ✅ Error handling implemented
-- ✅ Visualizations included
-- ✅ Streamlit app with proper structure
-- ✅ Deployment guide provided
-- ✅ .gitignore configured
-- ✅ requirements.txt pinned versions
-
-## Time Allocation (4 hours)
-
-- ✅ Setup & Structure: 15 min
-- ✅ HTML Parsing: 40 min
-- ✅ Feature Engineering: 60 min
-- ✅ Duplicate Detection: 35 min
-- ✅ Quality Model: 70 min
-- ✅ Real-time Demo: 25 min
-- ✅ Documentation: 25 min
-- ✅ Streamlit App: 30 min
-- ✅ Visualizations: 20 min
-
-**Total: ~5 hours (includes bonus features)**
 
 ## Next Steps
 
@@ -250,4 +220,3 @@ For questions or issues:
 
 ---
 
-**Status**: ✅ Complete - Ready for submission and deployment
