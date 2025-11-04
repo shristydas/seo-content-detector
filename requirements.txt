@@ -20,5 +20,5 @@ requests
 jupyter
 ipykernel
 
-# Streamlit (bonus)
+# Streamlit
 streamlit
